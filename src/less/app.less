@@ -1,0 +1,48 @@
+@lightblack: #2E2E2E;
+@darkblack: #191919;
+@myred: #CB3F35;
+@lightgrey: #F0F0F0;
+
+.border-radius(@n: 4px) {
+  -webkit-border-radius: @n;
+  -moz-border-radius: @n;
+  border-radius: @n;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+#container {
+  width: 980px;
+  height: auto;
+  margin: auto;
+  .border-radius;
+}
+
+#top {
+  width: 980px;
+  height: 150px;
+  margin: auto;
+  background: @darkblack;
+  .border-radius;
+}
+
+#sidebar {
+  width: 200px;
+  height: 700px;
+  margin: auto;
+  float: left;
+  background: @lightblack;
+  .border-radius;
+}
+
+#content {
+  width: 780px;
+  height: 700px;
+  margin: auto;
+  float: right;
+  background: @lightblack;
+  .border-radius(8px);
+}
